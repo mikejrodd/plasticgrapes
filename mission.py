@@ -1,6 +1,9 @@
 import streamlit as st
 
-# Set custom CSS for Poppins font
+# Set page config for wide layout
+st.set_page_config(layout="wide")
+
+# Set custom CSS for Poppins font and expanding content width
 st.markdown(
     """
     <style>
@@ -26,6 +29,12 @@ st.markdown(
             font-size: 1.1rem;
             color: black;
             line-height: 1.6;
+        }
+
+        /* Expand content width */
+        .main {
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         /* Limit page height to content */
@@ -63,9 +72,9 @@ st.markdown(
         ecological balance and productivity.
     </p>
     <p class="post-content">
-        Organic, Regenerative, Sustainable, sometimes even Synthetics... whatever the buzzword, what you are trying in the 
+        Organic, Regenerative, Sustainable, sometimes even Synthetics... whatever the buzzword, whatever you are trying in the 
         vineyard is likely a great step in the right direction if you are focused on responsible viticulture. But our ultimate 
-        goal is to curiously and flexibly adapt parts of all of these practices, with the aspirational goal of creating plasticity.  
+        goal is to curiously and flexibly adapt portions of all of these practices, with the aspirational goal of creating plasticity.  
     </p>
     """,
     unsafe_allow_html=True,
