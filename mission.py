@@ -1,17 +1,10 @@
 import streamlit as st
 
-# Set custom CSS for Poppins font and styling
+# Set custom CSS for Poppins font
 st.markdown(
     """
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-
-        h1 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 3rem;
-            color: #D4B9DB;
-            margin-bottom: 0.5rem;
-        }
 
         .mission-text {
             font-family: 'Poppins', sans-serif;
@@ -24,8 +17,8 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Mission Section
-st.markdown("<h1>mission</h1>", unsafe_allow_html=True)
+# Mission Section with inline style for color
+st.markdown('<h1 style="font-family: Poppins, sans-serif; font-size: 3rem; color: #D4B9DB; margin-bottom: 0.5rem;">mission</h1>', unsafe_allow_html=True)
 st.markdown(
     """
     <p class="mission-text">
