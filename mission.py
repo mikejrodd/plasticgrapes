@@ -62,7 +62,7 @@ st.markdown(
 )
 
 # Add the post section
-st.markdown('<h2 class="post-title">The Limit Does Not Exist: Plastic Vineyards</h2>', unsafe_allow_html=True)
+st.markdown('<h2 class="post-title">The Limit Does Not Exist</h2>', unsafe_allow_html=True)
 st.markdown(
     """
     <p class="post-content">
